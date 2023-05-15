@@ -30,13 +30,13 @@
 
           <!-- navigation list -->
           <ul class="site-nav list">
-            <li class="item">
-              <a href="./index.html" class="navigation-link link"> Studio</a>
+            <li class="item item-nav">
+              <a href="./index.html" class="navigation-link curent link"> Studio</a>
             </li>
-            <li class="item">
+            <li class="item item-nav">
               <a href="./portfolio.html" class="navigation-link link">Portfolio</a>
             </li>
-            <li class="item"><a href="" class="navigation-link link"> Contacts</a></li>
+            <li class="item item-nav"><a href="" class="navigation-link link"> Contacts</a></li>
           </ul>
         </nav>
         <!-- address -->
@@ -60,7 +60,7 @@
       <section class="section-hero">
         <div class="container">
           <h1 class="hero">Effective Solutions for Your Business</h1>
-          <button type="button" class="buttons">Order Service</button>
+          <button type="button" class="buttons" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- section company -->
@@ -397,5 +397,32 @@
         </div>
       </div>
     </footer>
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="button-modal" data-modal-close>
+          <svg
+            width="8"
+            height="8"
+            viewBox="0 0 8 8"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_520565_731)">
+              <path
+                d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
+                fill="#2E2F42"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_520565_731">
+                <rect width="8" height="8" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
