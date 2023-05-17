@@ -576,6 +576,7 @@ img {
 .backdrop.is-hidden {
   visibility: hidden;
   pointer-events: none;
+  opacity: 0;
 }
 .modal {
   position: absolute;
@@ -590,10 +591,11 @@ img {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transition: transform 1250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-modal {
   position: absolute;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -610,14 +612,16 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
   background-color 250ms 
-cubic-bezier(0.4, 0, 0.2, 1);
+cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-modal:hover,
 .button-modal:focus{
+  border:none;
   background-color: var(--Pressed-state-color);
-  fill:#fff;
+  fill: #fff;
 }
+
 
 /* portfolio.html */
 
@@ -655,7 +659,7 @@ cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #f4f4fd;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
